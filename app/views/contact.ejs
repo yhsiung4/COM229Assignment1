@@ -1,0 +1,43 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> Steven Hsiung</h1>
+    <hr>
+    <p>Email us at: <br>
+    Email: <a href="mailto:yhsiung4@my.centennialcollege.ca">yhsiung4@my.centennialcollege.ca</a></p>
+    <p>Please fill in this form to get in contact with Steven Hsiung Web Design.</p>
+    
+    <div class="contactForm">
+    <form method="post">
+      <label>Email: </label> <br>
+      <input name="txtEmail" type="email" placeholder="Your email..." required="required"/> 
+      <br><br>
+      <label for="fname">First Name:</label> <br>
+      <input name="txtFirstName" type="name" placeholder="Your name..." required="required"/>
+      <br><br>
+      <label for="lname">Last Name:</label> <br>
+      <input name="txtLastName" type="lastname" placeholder="Your last name..." required="required"/> 
+      <br><br>
+      <label for="phone">Phone Number:</label> <br>
+      <input name="txtPhoneNumber" type="phonenumber" placeholder="Your phone number..." required="required"/>
+      <br><br>
+      <label for="message">Message:</label> <br>
+      <textarea id="message" name="message" placeholder="Write something.."></textarea>
+      <br>
+      <input type="submit" class="button1" value="Submit" onclick="location.href='/home'">
+      <input type="reset" class="button1"> 
+    </div>
+    <br><br><br><br>
+  </div>
+    </main>
+
+    <!--bottom nav-->
+
+
+
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
